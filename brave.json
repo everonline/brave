@@ -1,0 +1,37 @@
+{
+    "version": "1.18.75",
+    "description": "Secure, Fast & Private Web Browser with Adblocker",
+    "homepage": "https://brave.com",
+    "license": {
+        "identifier": "Freeware,BSD-3-Clause,GPL-3.0-only,...",
+        "url": "https://github.com/brave/brave-browser/blob/master/LICENSE"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/everonline/brave/raw/master/1.18.75/brave_installer-x64.exe#/dl.7z",
+            "hash": "BD1A792320D90685F79E0CE3F5CE714B7DC8F8644F7C2DA2F315138D4557EF08"
+        },
+        "32bit": {
+            "url": "https://github.com/everonline/brave/raw/master/1.18.75/brave_installer-ia32.exe#/dl.7z",
+            "hash": "0CF3CCBD7AD76CEF41170ED0FBA1F9E523A4F27190F985930E06CF47810FA7C5"
+        }
+    },
+    "pre_install": "Expand-7zipArchive \"$dir\\chrome.7z\" -ExtractDir 'Chrome-bin' -Removal",
+    "bin": "brave.exe",
+    "shortcuts": [
+        [
+            "brave.exe",
+            "Brave"
+        ]
+    ],
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/everonline/brave/raw/master/v$version/brave_installer-x64.exe#/dl.7z"
+            },
+            "32bit": {
+                "url": "https://github.com/everonline/brave/raw/master/v$version/brave_installer-ia32.exe#/dl.7z"
+            }
+        }
+    }
+}
