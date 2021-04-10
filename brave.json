@@ -1,5 +1,5 @@
 {
-    "version": "1.20.103",
+    "version": "1.22.71",
     "description": "Secure, Fast & Private Web Browser with Adblocker",
     "homepage": "https://brave.com",
     "license": {
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/everonline/brave/raw/master/1.20.103/brave_installer-x64.exe#/dl.7z",
-            "hash": "ECF18C1047011A9913F565DE0C706689AB17914219C6BB28F626FE37DFBDFA7F"
+            "url": "https://github.com/everonline/brave/raw/master/1.22.71/brave_installer-x64.exe#/dl.7z",
+            "hash": "F130846A1AE984FCD90F12A512AE8F6559DF9659482CEE104FBBE35A20F18A03"
         },
         "32bit": {
-            "url": "https://github.com/everonline/brave/raw/master/1.20.103/brave_installer-ia32.exe#/dl.7z",
-            "hash": "1ECFB2762E42752B776A31BEDB4345D8969EF8F33BCED188926ACFEDC55241F6"
+            "url": "https://github.com/everonline/brave/raw/master/1.22.71/brave_installer-ia32.exe#/dl.7z",
+            "hash": "D54FDD871FC1630497FB569D6A04B9C1894D8FA89759941068182059D02A2E4B"
         }
     },
     "pre_install": "Expand-7zipArchive \"$dir\\chrome.7z\" -ExtractDir 'Chrome-bin' -Removal",
